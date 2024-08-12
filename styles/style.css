@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
+/* FONT STYLES */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Inter", sans-serif;
+    color: var(--text-primary-color);
+}
+h1{
+    font-size: 7.8rem;
+    font-weight: 900;
+    line-height: 8rem;
+}
+h2{
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+h3{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+h4{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+h5{
+    font-size: 2rem;
+    font-weight: 900;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-secondary-color);
+    line-height: 2rem;
+}
+li{
+    font-size: 1.8rem;
+}
+footer li{
+    font-size: 2.3rem;
+    color: var(--text-secondary-color);
+}
+.logo{
+    font-size: 3.6rem;
+    /* color: var(--primary-color); */
+    color: tomato;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+
+/* COLOR AND SIZING ROOTS */
+:root{
+    --primary-color: rgb(255, 99, 71);
+    --secondary-color: rgba(34, 34, 34, 1);
+    --secondary-color-light: rgba(34, 34, 34, 0.6);
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.5);
+    --container-width: 70%;
+}
+
+
+
+
+/* UNIVERSAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 1);
+}
+header{
+    background-image: linear-gradient(180deg, rgb(50, 50, 50) -20%, transparent 100%);
+}
+section{
+    margin-top: 10rem;
+}
+.container{
+    width: var(--container-width);
+    max-width: 1300px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.btn-pri{
+    /* background-color: var(--primary-color); */
+    background-color: tomato;
+    padding: 1.6rem 4rem;
+    border: none;
+    border-radius: 4.2rem;
+    /* color: var(--secondary-color); */
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.btn-sec{
+    background-color: transparent;
+    border: .1rem solid var(--text-primary-color);
+    padding: 1.6rem 4rem;
+    border-radius: 4.2rem;
+    color: var(--text-primary-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.btn-3{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 1.6rem 4rem;
+    border-radius: 4.2rem;
+    /* color: var(--primary-color); */
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: var(--text-primary-color);
+    /* background-color: tomato; */
+    color: var(--secondary-color);
+    /* color: white; */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    margin-bottom: 1.4rem;
+}
+
+
+
+
+/* BUTTON PAGE STYLES */
+.buttonpage{
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+
+/* HEADER STYLE (NAVBAR) */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+}
+nav>div>ul{
+    display: flex;
+    gap: 4.5rem;
+    border: 0.1rem solid var(--text-secondary-color);
+    border-radius: 5rem;
+    padding: 1.2rem .5rem;
+}
+nav>div>ul>li>a{
+    border-radius: 5rem;
+    padding: .8rem 2rem;
+    transition: background-color 0.5s;
+}
+nav>div>ul>li>a:hover{
+    color: var(--secondary-color);
+    font-weight: 600;
+    background-color: var(--primary-color);
+}
+nav>div>ul>li>a:focus{
+    color: var(--secondary-color);
+    font-weight: 600;
+    background-color: var(--primary-color);
+}
+nav a{
+    color: white;
+}
+.hamburgar{
+    /* color: var(--primary-color); */
+    color: white;
+    font-size: 3rem;
+    display: none;
+}
+
+/* HEADER STYLE (HERO) */
+.hero-div{
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+}
+.hero-text-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+.hero-shape{
+    font-family: 'Miama', sans-serif;
+    font-weight: 300;
+    font-size: 15rem;
+    letter-spacing: .5rem;
+}
+.hero-image-div{
+    background-image: url("../images/Images\ 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 58%;
+    height: 55rem;
+}
+.button-div{
+    display: flex;
+    gap: 1.4rem;
+}
+.upper-div-parent{
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.upper-div{
+    width: 19rem;
+    height: 10rem;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    margin-right: -8rem;
+}
+.hc500{
+    font-size: 4rem;
+}
+.pc500{
+    font-size: 1.3rem;
+}
+.lower-div-parent{
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+.lower-div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 15rem;
+    height: 9rem;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    margin-left: -8rem;
+}
+
+/* .circle{
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: tomato;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 100px;
+} */
+.upper-div{
+    margin-right: -55px;
+    margin-bottom: -4px;
+    width: 53%;
+    height: 35%;
+}
+.lower-div{
+    margin-left: -50px;
+    margin-bottom: 75px;
+    width: 45%;
+    height: 25%;
+    /* width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid; */
+}
+.video{
+    margin-right: -230px;
+    margin-top: -10px;
+    padding-right: 100px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+    margin-top: 0px;
+    border-radius: 50%;
+    border: 1px solid tomato;
+    background-color: tomato;
+}
+.fa-solid{
+    margin-left: 11px;
+    margin-top: 9px;
+}
+.lower-div img{
+    width: 4rem;
+}
+.hc350{
+    font-size: 3rem;
+}
+.pc350{
+    font-size: 1.3rem;
+}
+
+/* CHANGE YOUR HABITS STYLES */
+.cyh-text-div{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5.8rem;
+}
+.cyh-bottom-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    text-align: center;
+}
+.habit-div img{
+    border-radius: 50%;
+    width: 85%;
+    border: .4rem rgba(255, 255, 255, 0.1) solid;
+    margin-bottom: 3rem;
+}
+.habit-div h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: .6rem;
+}
+
+/* RUN AN EXTRA MILE STYLES */
+.rem-parent-div{
+    background-color: var(--secondary-color);
+    border-radius: 1.8rem;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    justify-content: space-between;
+}
+.rem-text-div{
+    width: 35%;
+}
+.rem-parent-div img{
+    border-radius: 1.8rem;
+}
+.rem-parent-div h2{
+    margin-bottom: 1.4rem;
+}
+.rem-parent-div p{
+    margin-bottom: 3.5rem;
+}
+
+/* TRAINING AND EXERCISES STYLES */
+.tne-text-div{
+    width: 60%;
+    margin-bottom: 5.8rem;
+}
+.tne-main-image-div{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-auto-rows: 25rem;
+}
+.the-image-title{
+    color: var(--text-primary-color);
+    font-weight: 500;
+    padding: 25px;
+    text-shadow: .0rem .0rem .5rem var(--secondary-color);
+}
+.tne-image-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.tne-img-div-1{
+    background-image: linear-gradient(180deg, rgba(212, 0, 0, 0.5), rgba(212, 0, 0, 0.5)), url('../images/exercise1.jpg');
+    align-items: last baseline;
+    grid-column: span 5;
+}
+.tne-img-div-2{
+    background-image: linear-gradient(180deg,  rgba(255, 166, 0, 0.5), rgba(255, 166, 0, 0.5)), url('../images/exercise2.png');
+    grid-column: span 9;
+}
+.tne-img-div-3{
+    background-image: linear-gradient(180deg, rgba(1, 111, 185, 0.5), rgba(1, 111, 185, 0.5)), url('../images/exercise3.png');
+    align-items: last baseline;
+    grid-column: span 6;
+}
+.tne-img-div-4{
+    background-image: linear-gradient(180deg, rgba(127, 5, 95, 0.5), rgba(127, 5, 95, 0.5)), url('../images/exercise4.png');
+    justify-content: right;
+    grid-column: span 9;
+}
+.tne-img-div-5{
+    background-image: linear-gradient(180deg, rgba(143, 201, 58, 0.7), rgba(143, 201, 58, 0.7)), url('../images/exercise5.jpg');
+    align-items: last baseline;
+    grid-column: span 5;
+}
+.tne-img-div-6{
+    background-image: linear-gradient(180deg, rgba(100, 35, 8, 0.7), rgba(100, 35, 58, 0.7)), url('../images/exercise6.jpg');
+    justify-content: flex-end;
+    grid-column: span 6;
+}
+
+/* OUR PACKAGES STYLES */
+.op-per-bg{
+    padding-top: 5rem;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/OP.jpg');
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.op-card-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.op-card-div ul{
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+}
+.card-lr{
+    padding: 3rem;
+    background-color: var(--secondary-color-light);
+    color: var(--secondary-color);
+    margin: 10rem 0;
+    color: var(--text-primary-color);
+    text-align: center;
+}
+.card-mid{
+    padding: 8rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+.card-price{
+    font-size: 5rem;
+    color: var(--text-primary-color);
+    font-weight: 500;
+    margin-top: 3rem;
+}
+.per-month{
+    font-size: 2rem;
+    color: var(--text-secondary-color);
+    margin: 3rem 0;
+}
+.card-price-2{
+    font-size: 5rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.per-month-2{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 2rem 0;
+}
+
+/* BMI CALCULATOR STYLES */
+.bmisec2{
+    background-color: var(--secondary-color);
+    margin-top: 8rem;
+}
+.bmi-parent-div{
+    display: flex;
+    justify-content: center;
+}
+.bmi-text-div{
+    width: 60%;
+}
+.bmi-parent-div-2{
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+    padding: 5rem 0;
+}
+.bmi-chart-div{
+    width: 30%;
+}
+table{
+    margin-top: 5rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: .05rem solid var(--text-secondary-color);
+    padding: 1.3rem;
+}
+td{
+    font-size: 1.4rem;
+    color: var(--text-secondary-color);
+    text-align: center;
+  }
+th{
+    font-size: 1.6rem;
+}
+.bmi-input-div{
+    width: 45%;
+}
+.bmi-input-div input,
+.bmi-input-div select{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: .8rem;
+    padding: 1.2rem 2rem;
+}
+option{
+    background-color: var(--secondary-color);
+}
+.bmi-input-div form{
+    margin-top: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-row-1{
+    display: flex;
+    gap: 1rem;
+}
+.input-row-1 input,
+.input-row-1 select{
+    width: 50%;
+}
+.input-row-3 select{
+    width: 100%;
+}
+input:focus, 
+select:focus{
+    outline: none;
+}
+#calculate-button{
+    margin-top: 3rem;
+    /* background-color: var(--primary-color); */
+    background-color: tomato;
+    padding: 1.4rem 4rem;
+    border: none;
+    border-radius: 4.2rem;
+    /* color: var(--secondary-color); */
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+#calculate-button:hover{
+    background-color: var(--text-primary-color);
+    color: var(--secondary-color);
+}
+
+/* MEET OUR TEAM STYLES */
+.meet-image-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1.8rem;
+}
+.trainer-images{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    border-radius: 1.8rem;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.trainer-images-1{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer1.png');
+}
+.trainer-images-2{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer2.png');
+}
+.trainer-images-3{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer3.png');
+}
+.trainer-images-4{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer4.png');
+}
+.trainer-images-5{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer5.png');
+}
+.trainer-images-6{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.6) 100%), url('../images/trainer6.png');
+}
+
+/* FOOTER STYLES */
+.footer-main-div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6rem;
+    padding: 5rem 0;
+}
+footer .logo{
+    font-size: 5rem;
+}
+.linktitle{
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+footer li>a{
+    color: var(--text-secondary-color);
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 300;
+}
+footer li>a:hover{
+    text-decoration: underline;
+}
+hr{
+    border: 0.02rem solid var(--text-secondary-color);
+    opacity: 20%;
+}
+.copy-text{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+.footer-about{
+    grid-column: span 2;
+}
+.footer-links-1{
+    grid-column: span 2;
+}
+.footer-links-1{
+    grid-column: span 2;
+}
