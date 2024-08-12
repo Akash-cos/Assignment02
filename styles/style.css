@@ -46,7 +46,6 @@ footer li{
 }
 .logo{
     font-size: 3.6rem;
-    /* color: var(--primary-color); */
     color: tomato;
     font-weight: 900;
     font-style: italic;
@@ -95,12 +94,10 @@ li{
     list-style: none;
 }
 .btn-pri{
-    /* background-color: var(--primary-color); */
     background-color: tomato;
     padding: 1.6rem 4rem;
     border: none;
     border-radius: 4.2rem;
-    /* color: var(--secondary-color); */
     color: white;
     font-weight: 600;
     font-size: 1.8rem;
@@ -123,7 +120,6 @@ li{
     border: none;
     padding: 1.6rem 4rem;
     border-radius: 4.2rem;
-    /* color: var(--primary-color); */
     color: white;
     font-weight: 600;
     font-size: 1.8rem;
@@ -132,9 +128,7 @@ li{
 }
 button:hover{
     background-color: var(--text-primary-color);
-    /* background-color: tomato; */
     color: var(--secondary-color);
-    /* color: white; */
 }
 img{
     max-width: 100%;
@@ -191,7 +185,6 @@ nav a{
     color: white;
 }
 .hamburgar{
-    /* color: var(--primary-color); */
     color: white;
     font-size: 3rem;
     display: none;
@@ -265,21 +258,6 @@ nav a{
     margin-bottom: 5rem;
     margin-left: -8rem;
 }
-
-/* .circle{
-    border: 1px solid red;
-    border-radius: 50%;
-    display: flex;
-    background-color: red;
-    width: 50%;
-    height: 50%;
-    height: 25px;
-    width: 25px;
-    background-color: tomato;
-    border-radius: 50%;
-    display: inline-block;
-    padding-right: 100px;
-} */
 .upper-div{
     margin-right: -55px;
     margin-bottom: -4px;
@@ -291,10 +269,6 @@ nav a{
     margin-bottom: 75px;
     width: 45%;
     height: 25%;
-    /* width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid; */
 }
 .video{
     margin-right: -230px;
@@ -555,12 +529,10 @@ select:focus{
 }
 #calculate-button{
     margin-top: 3rem;
-    /* background-color: var(--primary-color); */
     background-color: tomato;
     padding: 1.4rem 4rem;
     border: none;
     border-radius: 4.2rem;
-    /* color: var(--secondary-color); */
     color: white;
     font-weight: 600;
     font-size: 1.8rem;
